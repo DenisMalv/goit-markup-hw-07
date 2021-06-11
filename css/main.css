@@ -1,0 +1,16 @@
+.block {
+  display: flex;
+}
+
+div {
+  text-align: center;
+}
+
+p {
+  display: grid;
+}
+
+span {
+  text-decoration: double;
+}
+/*# sourceMappingURL=main.css.map */
