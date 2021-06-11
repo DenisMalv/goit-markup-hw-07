@@ -50,27 +50,29 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.item:hover,
-.item:focus {
-  color: var(--text-color-accent);
+
+  &:hover,
+  &:focus {
+    color: var(--text-color-accent);
+  }
 }
 
 .header-current {
   position: relative;
   color: var(--text-color-accent);
-}
-.header-current:after {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 4px;
-  bottom: -1px;
-  left: 0px;
 
-  border-radius: 2px;
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+    left: 0px;
 
-  background-color: var(--button-backgr-color);
+    border-radius: 2px;
+
+    background-color: var(--button-backgr-color);
+  }
 }
 
 .header__content {
@@ -91,14 +93,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* margin-left: 50px; */
+  &:hover,
+  &:focus {
+    color: var(--text-color-accent);
+  }
 }
 .header__content__list + .header__content__list {
   margin-left: 50px;
-}
-.header__content__item:hover,
-.header__content__item:focus {
-  color: var(--text-color-accent);
 }
 
 /* ========================== icons  ================================== */

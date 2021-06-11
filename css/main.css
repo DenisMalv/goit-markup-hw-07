@@ -208,8 +208,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item:hover,
-.item:focus {
+.header__list__item:hover, .header__list__item:focus {
   color: var(--text-color-accent);
 }
 
@@ -244,16 +243,14 @@ body {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  /* margin-left: 50px; */
+}
+
+.header__content__item:hover, .header__content__item:focus {
+  color: var(--text-color-accent);
 }
 
 .header__content__list + .header__content__list {
   margin-left: 50px;
-}
-
-.header__content__item:hover,
-.header__content__item:focus {
-  color: var(--text-color-accent);
 }
 
 /* ========================== icons  ================================== */
@@ -282,6 +279,10 @@ body {
   padding-bottom: 200px;
 }
 
+.hero .container {
+  text-align: center;
+}
+
 .hero__title {
   font-weight: 900;
   font-size: 44px;
@@ -295,10 +296,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-}
-
-.hero .container {
-  text-align: center;
 }
 
 .hero__button {
@@ -321,8 +318,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   color: var(--text-color-white);
   background-color: var(--button-main-active-bcgr-color);
 }
@@ -497,8 +493,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list__item__link:hover,
-.social-list__item__link:focus {
+.social-list__item__link:hover, .social-list__item__link:focus {
   background-color: var(--button-backgr-color);
   fill: var(--text-color-white);
 }
@@ -510,7 +505,7 @@ body {
   padding-bottom: 91px;
 }
 
-.cloents__logo {
+.clients__logo {
   display: block;
 }
 
@@ -532,8 +527,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__logo__icon:hover,
-.clients__logo__icon:focus {
+.clients__logo__icon:hover, .clients__logo__icon:focus {
   border-color: var(--button-backgr-color);
   fill: var(--text-color-accent);
 }
@@ -576,8 +570,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-adress__map:hover,
-.footer-adress__map:focus {
+.footer-adress__map:hover, .footer-adress__map:focus {
   color: var(--text-color-accent);
 }
 
@@ -589,8 +582,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-adress__cont:hover,
-.footer-adress__cont:focus {
+.footer-adress__cont:hover, .footer-adress__cont:focus {
   color: var(--text-color-accent);
 }
 
@@ -673,8 +665,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-subscribe-button:hover,
-.footer-subscribe-button:focus {
+.footer-subscribe-button:hover, .footer-subscribe-button:focus {
   background-color: var(--button-main-active-bcgr-color);
 }
 
@@ -743,8 +734,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__buttons-list__item-button:hover,
-.portfolio__buttons-list__item-button:focus {
+.portfolio__buttons-list__item-button:hover, .portfolio__buttons-list__item-button:focus {
   color: var(--text-color-white);
   background-color: var(--button-portf-active-bcgr-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -776,8 +766,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portf__list__item:hover,
-.portf__list__item:focus {
+.portf__list__item:hover, .portf__list__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -904,8 +893,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-close:hover,
-.modal-button-close:focus {
+.modal-button-close:hover, .modal-button-close:focus {
   color: var(--text-color-accent);
 }
 
@@ -1003,15 +991,10 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .person {
-  top: 104px;
+.modal-form__input__text:focus + .modal-form__input__icon {
+  fill: var(--button-backgr-color);
 }
-.phone {
-  top: 174px;
-}
-.email {
-  top: 243px;
-} */
+
 .modal-form__input-textarea {
   padding: 12px 16px;
   margin-bottom: 20px;
@@ -1065,15 +1048,15 @@ body {
   overflow: hidden;
 }
 
-/* для элемента label, связанного с .custom-checkbox */
 .private-policy__custom-checkbox + .private-policy__label-checkbox {
+  /* для элемента label, связанного с .custom-checkbox*/
   display: inline-flex;
   align-items: center;
   user-select: none;
 }
 
-/* создание в label псевдоэлемента before со следующими стилями */
 .private-policy__custom-checkbox + .private-policy__label-checkbox::before {
+  /* создание в label псевдоэлемента before со следующими стилями */
   content: '';
   display: inline-block;
   margin-right: 8px;
@@ -1092,24 +1075,21 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
-.private-policy__custom-checkbox:focus:not(:checked)
-+ .private-policy__label-checkbox::before {
+.private-policy__custom-checkbox:focus:not(:checked) + .private-policy__label-checkbox::before {
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии check*/
   border-color: var(--button-backgr-color);
 }
 
-/* стили для чекбокса, находящегося в состоянии checked */
-.private-policy__custom-checkbox:checked
-+ .private-policy__label-checkbox::before {
+.private-policy__custom-checkbox:checked + .private-policy__label-checkbox::before {
+  /* стили для чекбокса, находящегося в состоянии checked*/
   border-color: #0b76ef;
   background-color: #0b76ef;
   background-image: url("../images/Vector.svg");
   background-size: contain;
 }
 
-/* стили для чекбокса, находящегося в состоянии disabled */
-.private-policy__custom-checkbox:disabled
-+ .private-policy__label-checkbox::before {
+.private-policy__custom-checkbox:disabled + .private-policy__label-checkbox::before {
+  /* стили для чекбокса, находящегося в состоянии disabled */
   background-color: #e9ecef;
 }
 
@@ -1141,8 +1121,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-button-send:hover,
-.modal-button-send:focus {
+.modal-button-send:hover, .modal-button-send:focus {
   background-color: var(--button-main-active-bcgr-color);
 }
 

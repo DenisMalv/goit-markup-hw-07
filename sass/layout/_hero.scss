@@ -14,6 +14,10 @@
 
   padding-top: 200px;
   padding-bottom: 200px;
+
+  .container {
+    text-align: center;
+  }
 }
 
 .hero__title {
@@ -32,9 +36,7 @@
   margin-right: auto;
   margin-bottom: 30px;
 }
-.hero .container {
-  text-align: center;
-}
+
 .hero__button {
   font-family: inherit;
   font-weight: 700;
@@ -56,11 +58,11 @@
   transition-property: background-color, box-shadow;
   transition-duration: 1150ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero-button:hover,
-.hero-button:focus {
-  color: var(--text-color-white);
-  background-color: var(--button-main-active-bcgr-color);
-}
 
+  &:hover,
+  &:focus {
+    color: var(--text-color-white);
+    background-color: var(--button-main-active-bcgr-color);
+  }
+}
 /* ===================== hero end ========================== */

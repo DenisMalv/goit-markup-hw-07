@@ -81,10 +81,10 @@
 
 .social-list__item {
   border-radius: 50%;
-}
 
-.social-list__item:not(:last-child) {
-  margin-right: 10px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-list__item__link {
@@ -101,12 +101,12 @@
   transition-property: fill, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-list__item__link:hover,
-.social-list__item__link:focus {
-  background-color: var(--button-backgr-color);
-  fill: var(--text-color-white);
+  &:hover,
+  &:focus {
+    background-color: var(--button-backgr-color);
+    fill: var(--text-color-white);
+  }
 }
 
 /* ===================== our-team end  ========================== */

@@ -4,11 +4,12 @@
   padding-bottom: 91px;
 }
 
-.cloents__logo {
+.clients__logo {
   display: block;
-}
-.clients__logo:not(:last-child) {
-  margin-right: 30px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients__logo__icon {
@@ -26,10 +27,11 @@
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients__logo__icon:hover,
-.clients__logo__icon:focus {
-  border-color: var(--button-backgr-color);
-  fill: var(--text-color-accent);
+
+  &:hover,
+  &:focus {
+    border-color: var(--button-backgr-color);
+    fill: var(--text-color-accent);
+  }
 }
 /* ========================== clients end =========================== */

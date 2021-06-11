@@ -1,8 +1,10 @@
 /* ===================== prefs start  ========================== */
-.container .prefs {
-  padding-bottom: 0;
-  margin-top: -30px;
-  margin-left: -30px;
+.container {
+  .prefs {
+    padding-bottom: 0;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .prefs__item {

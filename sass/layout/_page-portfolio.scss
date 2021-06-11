@@ -57,14 +57,14 @@
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portfolio__buttons-list__item-button:hover,
-.portfolio__buttons-list__item-button:focus {
-  color: var(--text-color-white);
-  background-color: var(--button-portf-active-bcgr-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  &:hover,
+  &:focus {
+    color: var(--text-color-white);
+    background-color: var(--button-portf-active-bcgr-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 /* <-----------portfolio card list-----------> */
@@ -94,12 +94,12 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.portf__list__item:hover,
-.portf__list__item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 /*========== Вариант расположения элементов №2 ==========
@@ -176,11 +176,11 @@
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--text-color-white);
-}
 
-.portf__list__item:hover .portf__list__item__card-main__anim,
-.portf__list__item:focus .portf__list__item__card-main__anim {
-  transform: translatey(0);
+  .portf__list__item:hover &,
+  .portf__list__item:focus & {
+    transform: translatey(0);
+  }
 }
 
 /* <==========  page Portfolio "different styles" end ========> */

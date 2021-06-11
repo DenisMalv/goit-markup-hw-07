@@ -172,8 +172,8 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.item:hover,
-.item:focus {
+.header__list__item:hover,
+.header__list__item:focus {
   color: var(--text-color-accent);
 }
 
