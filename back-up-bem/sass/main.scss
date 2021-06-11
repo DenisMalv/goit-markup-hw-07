@@ -1,0 +1,18 @@
+/* <================ ""MAIN" content styles==============> */
+// utils ==
+@import './utils/variable';
+@import './utils/visually-hidden';
+
+// base ==
+@import './base/common';
+@import './base/container';
+@import './base/section';
+
+// components ==
+@import './components/section-title';
+
+// layout ==
+
+.p {
+  text-decoration: dashed;
+}

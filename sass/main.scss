@@ -1,15 +1,25 @@
-.block {
-  display: flex;
-}
+/* <================ ""MAIN" content styles==============> */
+// utils ==
+@import './utils/variable';
+@import './utils/visually-hidden';
 
-div {
-  text-align: center;
-}
+// base ==
+@import './base/common';
+@import './base/container';
+@import './base/section';
 
-p {
-  display: grid;
-}
+// components ==
+@import './components/section-title';
+@import './components/social-list';
+@import './components/wraper-description';
 
-span {
-  text-decoration: double;
-}
+// layout ==
+@import './layout/header';
+@import './layout/hero';
+@import './layout/prefs';
+@import './layout/what-we-do';
+@import './layout/our-team';
+@import './layout/footer';
+@import './layout/page-portfolio';
+@import './layout/backdrop';
+@import './layout/modal';

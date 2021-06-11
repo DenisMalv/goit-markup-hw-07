@@ -84,6 +84,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -95,6 +96,19 @@ body {
 .section-half-top {
   padding-top: 47px;
   padding-bottom: 94px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color-black);
+}
+
+.section-title--h-indent {
+  margin-bottom: 50px;
 }
 
 /*      вариант секции падинга секции wedo 
@@ -347,7 +361,7 @@ body {
 /* .what-wedo {
 } */
 
-.wedo__h {
+/* .wedo__h {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -356,7 +370,7 @@ body {
   color: var(--text-color-black);
 
   margin-bottom: 50px;
-}
+} */
 
 .what-wedo__list {
   flex-wrap: wrap;
@@ -373,15 +387,19 @@ body {
   position: relative;
 }
 
-.what-wedo__list__p {
+.wrapper-description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
-  text-align: center;
+
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: var(--text-color-white);
+}
+
+.wrapper-description--what-wedo {
+  text-align: center;
   background-color: rgba(47, 48, 58, 0.8);
 
   position: absolute;
@@ -417,7 +435,7 @@ body {
 .our-team {
   background-color: var(--color-team-backgr);
 }
-.our-team__h {
+/* .our-team__h {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -426,7 +444,7 @@ body {
   color: var(--text-color-black);
 
   margin-bottom: 50px;
-}
+} */
 .our-team__list {
   flex-wrap: wrap;
   align-items: flex-start;
@@ -541,7 +559,7 @@ body {
   padding-top: 94px;
   padding-bottom: 91px;
 }
-.clients-h {
+/* .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -550,7 +568,7 @@ body {
   color: var(--text-color-black);
 
   margin-bottom: 50px;
-}
+} */
 
 .cloents__logo {
   display: block;
@@ -640,18 +658,10 @@ body {
 }
 
 .footer-follow--right {
-  margin-left: 73px;
+  margin-left: auto;
 }
 
-.footer-follow__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--text-color-white);
-
+.wrapper-description--follow-us {
   margin-bottom: 20px;
 }
 
@@ -674,14 +684,7 @@ body {
   display: flex;
 }
 
-.footer-subscribe-form__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: var(--text-color-white);
+.wrapper-description--subscribe {
   display: block;
 }
 
@@ -952,7 +955,7 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+/* =========================== modal window ====================== */
 .modal {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -1243,3 +1246,6 @@ body {
 .modal-button-send:focus {
   background-color: var(--button-main-active-bcgr-color);
 }
+/* =========================== modal form end ====================== */
+
+/* =========================== modal window end ====================== */
