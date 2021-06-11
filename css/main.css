@@ -152,7 +152,6 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--text-color-white);
@@ -505,6 +504,41 @@ body {
 }
 
 /* ===================== our-team end  ========================== */
+/* ========================== clients start  ========================== */
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 91px;
+}
+
+.cloents__logo {
+  display: block;
+}
+
+.clients__logo:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__logo__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__logo__icon:hover,
+.clients__logo__icon:focus {
+  border-color: var(--button-backgr-color);
+  fill: var(--text-color-accent);
+}
+
+/* ========================== clients end =========================== */
 /* ============================ footer start ====================== */
 .footer {
   background-color: var(--color-footer-backgr);
