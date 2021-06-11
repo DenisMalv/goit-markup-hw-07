@@ -755,14 +755,17 @@ body {
 /* <==========  page Portfolio "different styles" ========> */
 
 /* <---------portfolio buttons --------> */
-.portf-buttons {
+.portfolio__buttons-list {
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.portfolio__buttons-list--indent {
   margin-top: -8px;
   margin-left: -8px;
   margin-bottom: 50px;
 }
-.buttons {
+.portfolio__buttons-list__item {
   margin-top: 8px;
   margin-left: 8px;
 }
@@ -784,7 +787,7 @@ body {
   margin-bottom: 0;
 } */
 
-.button {
+.portfolio__buttons-list__item-button {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -810,8 +813,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover,
-.button:focus {
+.portfolio__buttons-list__item-button:hover,
+.portfolio__buttons-list__item-button:focus {
   color: var(--text-color-white);
   background-color: var(--button-portf-active-bcgr-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -826,16 +829,19 @@ body {
 .portf {
   flex-wrap: wrap;
   align-items: flex-start;
+}
+
+.portf--indent {
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.portf-item {
+.portf__list {
   margin-top: 30px;
   margin-left: 30px;
 }
 
-.portf-list {
+.portf__list__item {
   width: calc((1200px - 90px) / 3);
   display: block;
 
@@ -844,8 +850,8 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portf-list:hover,
-.portf-list:focus {
+.portf__list__item:hover,
+.portf__list__item:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -870,7 +876,7 @@ body {
 /* .portf-img {
 } */
 
-.card-title {
+.portf__list__item__card-title {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -880,7 +886,7 @@ body {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-.portf-h {
+.portf__list__item__card-title__h {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -891,7 +897,7 @@ body {
   margin-bottom: 4px;
   display: block;
 }
-.portf-p {
+.portf__list__item__card-title__p {
   display: block;
   font-size: 16px;
   line-height: 1.87;
@@ -899,12 +905,12 @@ body {
   color: var(--text-color-standart);
 }
 
-.card-main {
+.portf__list__item__card-main {
   position: relative;
   overflow: hidden;
 }
 
-.portf-anim {
+.portf__list__item__card-main__anim {
   position: absolute;
   top: 0;
   left: 0;
@@ -926,8 +932,8 @@ body {
   color: var(--text-color-white);
 }
 
-.portf-list:hover .portf-anim,
-.portf-list:focus .portf-anim {
+.portf__list__item:hover .portf__list__item__card-main__anim,
+.portf__list__item:focus .portf__list__item__card-main__anim {
   transform: translatey(0);
 }
 
